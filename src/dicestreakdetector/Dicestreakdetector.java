@@ -19,22 +19,21 @@ public class Dicestreakdetector {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    int randomdobbel;
-    int rnd;
-    ArrayList<Integer> dobbels = new ArrayList<>();
-    int nr;
+    ArrayList<Integer> Throws = new ArrayList<>();
     int length = 20;
 
-    
+    // Generate the ArrayList Throws of {lenth} long
     for (int x = 0; x < length; x++){
-        dobbels.add(ThrowDice());
+        Throws.add(ThrowDice());
         }
-    printStuff(dobbels);
+    printStuff(Throws); // Print ArrayList for DebuggingPurposes 
     }
+    // ThrowDice Method for generating a number between 1 and 6
     public static int ThrowDice(){
         int DiceThrow = new Random().nextInt((6 - 1)+ 1 ) + 1;
         return DiceThrow;
     }
+    // Print method for ArrayList
     public static void printStuff(ArrayList dobbels){{
     for (int x = 0; x < dobbels.size(); x++){
         System.out.print(dobbels.get(x)+ " ");
