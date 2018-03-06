@@ -28,14 +28,18 @@ public class Dicestreakdetector {
     
     for (int x = 0; x < length; x++){
         dobbels.add(ThrowDice());
-    }
-    for (int x = 0; x < length; x++){
-        System.out.print(dobbels.get(x)+ " ");
-    }
+        }
+    printStuff(dobbels);
     }
     public static int ThrowDice(){
         int DiceThrow = new Random().nextInt((6 - 1)+ 1 ) + 1;
         return DiceThrow;
     }
+    public static void printStuff(ArrayList dobbels){{
+    for (int x = 0; x < dobbels.size(); x++){
+        System.out.print(dobbels.get(x)+ " ");
+    }
+    
+    }}
 
 }
