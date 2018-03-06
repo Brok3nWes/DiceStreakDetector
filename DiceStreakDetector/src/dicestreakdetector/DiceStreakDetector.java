@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package dicestreakdetector;
-
 import java.util.Random;
 
 /**
@@ -12,26 +11,20 @@ import java.util.Random;
  * @author Wessel
  */
 public class DiceStreakDetector {
-int randomdobbel;
-int rnd;
-int dobbels[];
-int nr;
+
     /**
      * @param args the command line arguments
      */
+    int amountOfThrows = 20;
+    int numbers[];
     public static void main(String[] args) {
-        // TODO code application logic here
-   
-        
-       
+        for (int x = 0; x < amountOfThrows; x++){
+            numbers[x] = ThrowDice();
+        }
     }
-     
+    public static int ThrowDice(){
+        int DiceThrow = new Random().nextInt(6);
+        return DiceThrow;
+    }
+    
 }
-
-
-
-
-/*
-rnd = new Random().nextInt(6);
-       dobbels[nr] = rnd;
-*/
