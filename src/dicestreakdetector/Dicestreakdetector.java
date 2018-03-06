@@ -36,7 +36,20 @@ public class Dicestreakdetector {
     // Print method for ArrayList
     public static void printStuff(ArrayList dobbels){{
     for (int x = 0; x < dobbels.size(); x++){
-        System.out.print(dobbels.get(x)+ " ");
+        if (dobbels.get(x+1) == dobbels.get(x+2)) {
+            System.out.print("(");
+            System.out.print(dobbels.get(x)+ " ");
+            System.out.println("SHIT1");
+        }
+        
+        else if (dobbels.get(x-1) == dobbels.get(x) && dobbels.get(x) != dobbels.get(x+1)) {
+            System.out.print(") ");
+            System.out.print(dobbels.get(x)+ " ");
+            System.out.println("SHIT");
+        }
+        System.out.print("SHIT3");
+        
+        
     }
     
     }}
