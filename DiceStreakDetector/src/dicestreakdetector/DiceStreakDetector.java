@@ -6,16 +6,22 @@
 package dicestreakdetector;
 import java.util.Random;
 
+import java.util.Random;
+
 /**
  *
  * @author Wessel
  */
 public class DiceStreakDetector {
-
+int randomdobbel;
+int rnd;
+int dobbels[];
+int nr;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+<<<<<<< HEAD
     int amountOfThrows = 20;
     int numbers[] = null;
     for (int x = 0; x < amountOfThrows; x++){
@@ -28,6 +34,20 @@ public class DiceStreakDetector {
     public static int ThrowDice(){
         int DiceThrow = new Random().nextInt(6);
         return DiceThrow;
+=======
+        // TODO code application logic here
+   
+        
+       
+>>>>>>> 55a2af379874c1fc5a729f6f502c90ffc034470a
     }
-    
+     
 }
+
+
+
+
+/*
+rnd = new Random().nextInt(6);
+       dobbels[nr] = rnd;
+*/
