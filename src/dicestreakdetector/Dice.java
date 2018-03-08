@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package dicestreakdetector;
 
 import java.util.Random;
@@ -12,11 +7,11 @@ import java.util.Random;
  */
 public class Dice {
 
-    private final int maxAmountOfEyes;
-    private final int minAmountOfEyes;
+    final int maxAmountOfEyes;
+    final int minAmountOfEyes;
 
     /**
-     * sets the min and max amount of eyes of the dice
+     * sets the minimum and maximum amount of eyes of the dice
      */
     public Dice() {
         this.minAmountOfEyes = 1;
